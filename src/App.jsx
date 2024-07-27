@@ -2,7 +2,7 @@ import { useState, useRef } from 'react'
 import axios from 'axios'
 import './App.css'
 import WeatherInformations from './components/WeatherInformations/WeatherInformations'
-import WeatherInformations5Days from './components/WeatherInformations/WeatherInformations5Days/WeatherInformations5Days'
+import WeatherInformations5Days from './components/WeatherInformations5Days/WeatherInformations5Days'
 
 
 function App() {
@@ -28,7 +28,7 @@ async function searchCity() {
   
   return (
     <div className='container'>
-      <h1>DevClub Previsão do Tempo</h1>
+      <h1>Previsão do Tempo</h1>
       <input ref={inputRef} type='text' placeholder='Digite o nome da cidade'/>
       <button onClick={searchCity}>Buscar</button>
 
